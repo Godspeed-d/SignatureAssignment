@@ -74,5 +74,31 @@
     margin: 10px;      
     border: 1px solid #ccc; 
 }
+form div {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+form input[type="submit"] {
+    background-color: #00B386;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
 
     </style>
