@@ -1,68 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-	      <head>
-		            <title>Dion's Demo</title>
-		            <meta charset="utf-8">
-		            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		            <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-		            <link rel="stylesheet" href="Signature.css">
-    	  </head>
-	      <body>
-		            <div id="wrapper">
-			                  <header><h1>Dion'sAssignment</h1></header>
-			                  <nav>
-				                        <ul>
-				                              	<li><a href="index.html">Home</a></li>
-					                              <li><a href="Menu.html">Menu</a></li>
-					                              <li><a href="Locations.html">Locations</a></li>
-					                              <li><a href="Community.html">Community</a></li>
-				                              	<li><a href="About.html">About Us</a></li>
-				                      </ul>
-		                  </nav>
-				  <main>
-				<h2>Help us better your experience by telling us what we could do better</h2>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dion's Demo</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="Signature.css">
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Dion's Assignment</h1>
+        </header>
 
-				<h3>Fill out the form below to contact us.</h3>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Menu.html">Menu</a></li>
+                <li><a href="Locations.html">Locations</a></li>
+                <li><a href="Community.html">Community</a></li>
+                <li><a href="About.html">About Us</a></li>
+            </ul>
+        </nav>
 
-				<p>Required fields are marked with an asterisk *</p>
+        <main>
+            <h2>Help Us Improve</h2>
+            <h3>Fill out the form below to contact us.</h3>
+            <p>Required fields are marked with an asterisk (<span aria-hidden="true">*</span>).</p>
 
-				<form action="#" method="post">
-					
-					<div>
-						<label for="FName">*First Name:</label>
-						<input type="text" id="FName" name="FName" required style="width:100%; padding:8px; margin-bottom:10px;" />
-					</div>
+            <form action="#" method="post" id="contactForm">
+                <div>
+                    <label for="FName">*First Name:</label>
+                    <input type="text" id="FName" name="FName" required>
+                </div>
 
-					<div>
-						<label for="LName">*Last Name:</label>
-						<input type="text" id="LName" name="LName" required style="width:100%; padding:8px; margin-bottom:10px;" />
-					</div>
+                <div>
+                    <label for="LName">*Last Name:</label>
+                    <input type="text" id="LName" name="LName" required>
+                </div>
 
-					<div>
-						<label for="email">*E-mail:</label>
-						<input type="email" id="email" name="email" required style="width:100%; padding:8px; margin-bottom:10px;" maxlength="40" />
-					</div>
+                <div>
+                    <label for="email">*Email:</label>
+                    <input type="email" id="email" name="email" required maxlength="40">
+                </div>
 
-					<div>
-						<label for="phone">Phone:</label>
-						<input type="text" id="phone" name="phone" maxlength="12" style="width:100%; padding:8px; margin-bottom:10px;" />
-					</div>
+                <div>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" maxlength="12">
+                </div>
 
-					<div>
-						<label for="message">Message:</label>
-						<textarea id="message" name="message" required style="width:100%; padding:8px; margin-bottom:10px;" rows="2" cols="30"></textarea>
-					</div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
 
-					<div>
-						<input type="submit" value="Submit" style="background-color:#00B386; color:white; padding:10px 15px; border:none; cursor:pointer;" />
-					</div>
-				</form>
-			</main>
-  
-		          </div>
-	      </body> 
-	      <footer>
-				                      <br>Copyright &copy; 2025 University of Cincinnati, IT2040<br>
-				                      <a href="mailto:25daviol@students.lovelandschools.org">25daviol@students.lovelandschools.org</a>
-	      </footer>
+                <div>
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 University of Cincinnati, IT2040<br>
+            <a href="mailto:25daviol@students.lovelandschools.org">25daviol@students.lovelandschools.org</a></p>
+        </footer>
+    </div>
+</body>
 </html>
