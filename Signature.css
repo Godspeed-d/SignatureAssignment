@@ -188,3 +188,26 @@ form input[type="submit"]:hover {
     nav ul li {
         width: 100%;
         text-align: left;
+#galGrid {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	justify-content: center;
+}
+
+figure {
+	text-align: center;
+	width: 200px;
+}
+
+figure img {
+	width: 100%;
+	height: auto;
+	border-radius: 8px;
+}
+
+figcaption {
+	margin-top: 0.5rem;
+	font-weight: bold;
+	font-size: 1rem;
+}
