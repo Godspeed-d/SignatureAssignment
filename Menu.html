@@ -1,72 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Dion's Menu</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Signature.css">
+  <meta charset="UTF-8" />
+  <title>Dion's Menu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="Signature.css">
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 2em;
+      color: white;
+      background-color: #333;
+    }
+
+    th, td {
+      border: 1px solid #888;
+      padding: 12px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f5c411;
+      color: red;
+    }
+
+    h2 {
+      color: #f5c411;
+      margin-top: 2em;
+    }
+
+    main {
+      padding: 1em;
+      width: 100%;
+    }
+  </style>
 </head>
 <body>
-    <div id="wrapper">
-        <header>
-            <h1>Dion'sAssignment</h1>
-            <p>Check Out Our Delicious Menu</p>
-        </header>
+  <div id="wrapper">
+    <header>
+      <h1>Dion'sAssignment</h1>
+      <p>Check Out Our Delicious Menu</p>
+    </header>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="Menu.html">Menu</a></li>
-                <li><a href="Locations.html">Locations</a></li>
-                <li><a href="Community.html">Community</a></li>
-                <li><a href="About.html">About Us</a></li>
-            </ul>
-        </nav>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Menu.html">Menu</a></li>
+        <li><a href="Locations.html">Locations</a></li>
+        <li><a href="Community.html">Community</a></li>
+        <li><a href="About.html">About Us</a></li>
+      </ul>
+    </nav>
 
-        <main>
-            <section style="width: 100%; color: white;">
-                <h2>Pizza</h2>
-                <ul>
-                    <li><strong>Cheese:</strong> Classic cheese pizza – 210-260 cal/slice</li>
-                    <li><strong>Special:</strong> Sausage, pepperoni, onion, mushroom, olives – 350-430 cal/slice</li>
-                    <li><strong>Veggie:</strong> Loaded with fresh vegetables – 240-300 cal/slice</li>
-                    <li><strong>Carnivore:</strong> All-meat pizza – 370-470 cal/slice</li>
-                </ul>
+    <main>
+      <section>
+        <h2>Pizza</h2>
+        <table>
+          <tr><th>Item</th><th>Description</th><th>Calories</th></tr>
+          <tr><td>Cheese</td><td>Classic cheese pizza</td><td>210-260</td></tr>
+          <tr><td>Special</td><td>Sausage, pepperoni, onion, mushroom, olives</td><td>350-430</td></tr>
+          <tr><td>Veggie</td><td>Fresh vegetables loaded</td><td>240-300</td></tr>
+          <tr><td>Carnivore</td><td>All-meat pizza</td><td>370-470</td></tr>
+        </table>
 
-                <h2>Salads</h2>
-                <ul>
-                    <li><strong>Tossed:</strong> Romaine, tomatoes, croutons – 170 cal</li>
-                    <li><strong>Chef:</strong> Turkey, ham, cheddar – 370 cal</li>
-                    <li><strong>Greek:</strong> Feta, olives, cucumbers – 270 cal</li>
-                </ul>
+        <h2>Salads</h2>
+        <table>
+          <tr><th>Item</th><th>Description</th><th>Calories</th></tr>
+          <tr><td>Tossed</td><td>Romaine, tomatoes, croutons</td><td>170</td></tr>
+          <tr><td>Chef</td><td>Turkey, ham, cheddar</td><td>370</td></tr>
+          <tr><td>Greek</td><td>Feta, olives, cucumbers</td><td>270</td></tr>
+        </table>
 
-                <h2>Subs</h2>
-                <ul>
-                    <li><strong>Turkey & Swiss:</strong> Oven-roasted turkey with Swiss – 430 cal</li>
-                    <li><strong>Italian:</strong> Ham, salami, provolone – 480 cal</li>
-                    <li><strong>Veggie:</strong> Provolone, peppers, olives – 380 cal</li>
-                </ul>
+        <h2>Subs</h2>
+        <table>
+          <tr><th>Item</th><th>Description</th><th>Calories</th></tr>
+          <tr><td>Turkey & Swiss</td><td>Oven-roasted turkey with Swiss</td><td>430</td></tr>
+          <tr><td>Italian</td><td>Ham, salami, provolone</td><td>480</td></tr>
+          <tr><td>Veggie</td><td>Provolone, bell peppers, olives</td><td>380</td></tr>
+        </table>
 
-                <h2>Goodies</h2>
-                <ul>
-                    <li><strong>Fruit Cup:</strong> Fresh seasonal fruit – 80 cal</li>
-                    <li><strong>Chips:</strong> Assorted flavors – 150 cal</li>
-                    <li><strong>Cookies:</strong> Chocolate chip, oatmeal, more – 220 cal</li>
-                </ul>
+        <h2>Goodies</h2>
+        <table>
+          <tr><th>Item</th><th>Description</th><th>Calories</th></tr>
+          <tr><td>Fruit Cup</td><td>Fresh seasonal fruit</td><td>80</td></tr>
+          <tr><td>Chips</td><td>Assorted flavors</td><td>150</td></tr>
+          <tr><td>Cookies</td><td>Chocolate chip, oatmeal, more</td><td>220</td></tr>
+        </table>
 
-                <h2>Drinks</h2>
-                <ul>
-                    <li><strong>Soda:</strong> Coca-Cola products – 150-200 cal</li>
-                    <li><strong>Tea:</strong> Fresh brewed – 0 cal</li>
-                    <li><strong>Water:</strong> Bottled water – 0 cal</li>
-                </ul>
-            </section>
-        </main>
-    </div>
+        <h2>Drinks</h2>
+        <table>
+          <tr><th>Item</th><th>Description</th><th>Calories</th></tr>
+          <tr><td>Soda</td><td>Coca-Cola products</td><td>150-200</td></tr>
+          <tr><td>Tea</td><td>Fresh brewed, unsweetened</td><td>0</td></tr>
+          <tr><td>Water</td><td>Bottled water</td><td>0</td></tr>
+        </table>
+      </section>
+    </main>
+  </div>
 
-    <footer>
-        <p>&copy; 2025 University of Cincinnati, IT2040</p>
-        <p><a href="mailto:25daviol@students.lovelandschools.org">25daviol@students.lovelandschools.org</a></p>
-    </footer>
+  <footer>
+    <p>&copy; 2025 University of Cincinnati, IT2040</p>
+    <p><a href="mailto:25daviol@students.lovelandschools.org">25daviol@students.lovelandschools.org</a></p>
+  </footer>
 </body>
 </html>
