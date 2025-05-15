@@ -1,164 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Dion's Menu - Table Format</title>
+  <meta charset="UTF-8" />
+  <title>Dion's Menu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f8f8f8;
+      color: #333;
+    }
+
+    header, footer {
+      background-color: #006341;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #004d2c;
+      text-align: center;
+      padding: 0.5rem;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    h2 {
+      border-bottom: 2px solid #006341;
+      padding-bottom: 0.25rem;
+      margin-top: 2rem;
+      color: #006341;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 0.75rem;
+      text-align: left;
+    }
+
+    th {
+      background-color: #e0f2e9;
+    }
+
+    footer p, footer a {
+      color: #fff;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
 </head>
 <body>
+  <header>
     <h1>Dion's Menu</h1>
+  </header>
 
-    <nav>
-        <ul>
-            <li><a href="#pizza">Pizza</a></li>
-            <li><a href="#salads">Salads</a></li>
-            <li><a href="#subs">Subs</a></li>
-            <li><a href="#goodies">Goodies</a></li>
-            <li><a href="#drinks">Drinks</a></li>
-        </ul>
-    </nav>
+  <nav>
+    <a href="#pizza">Pizza</a>
+    <a href="#salads">Salads</a>
+    <a href="#subs">Subs</a>
+    <a href="#goodies">Goodies</a>
+    <a href="#drinks">Drinks</a>
+  </nav>
 
-    <hr>
-
+  <main>
     <section id="pizza">
-        <h2>Pizza</h2>
-        <table border="1" cellpadding="8">
-            <tr>
-                <th>Item</th>
-                <th>Description</th>
-                <th>Calories</th>
-            </tr>
-            <tr>
-                <td>Cheese</td>
-                <td>Classic cheese pizza</td>
-                <td>210-260/slice</td>
-            </tr>
-            <tr>
-                <td>Special</td>
-                <td>Sausage, pepperoni, onions, mushrooms, olives</td>
-                <td>350-430/slice</td>
-            </tr>
-            <tr>
-                <td>Carnivore</td>
-                <td>All meats</td>
-                <td>370-470/slice</td>
-            </tr>
-            <tr>
-                <td>Veggie</td>
-                <td>Loaded with vegetables</td>
-                <td>240-300/slice</td>
-            </tr>
-        </table>
+      <h2>Pizza</h2>
+      <table>
+        <tr>
+          <th>Item</th>
+          <th>Description</th>
+          <th>Calories</th>
+        </tr>
+        <tr>
+          <td>Cheese</td>
+          <td>Classic cheese pizza</td>
+          <td>210-260/slice</td>
+        </tr>
+        <tr>
+          <td>Special</td>
+          <td>Sausage, pepperoni, onion, mushroom, olives</td>
+          <td>350-430/slice</td>
+        </tr>
+        <tr>
+          <td>Veggie</td>
+          <td>Loaded with fresh vegetables</td>
+          <td>240-300/slice</td>
+        </tr>
+        <tr>
+          <td>Carnivore</td>
+          <td>All-meat pizza for meat lovers</td>
+          <td>370-470/slice</td>
+        </tr>
+      </table>
     </section>
 
     <section id="salads">
-        <h2>Salads</h2>
-        <table border="1" cellpadding="8">
-            <tr>
-                <th>Item</th>
-                <th>Description</th>
-                <th>Calories</th>
-            </tr>
-            <tr>
-                <td>Tossed</td>
-                <td>Romaine, tomatoes, croutons</td>
-                <td>170</td>
-            </tr>
-            <tr>
-                <td>Chef</td>
-                <td>Turkey, ham, cheddar</td>
-                <td>370</td>
-            </tr>
-            <tr>
-                <td>Greek</td>
-                <td>Feta, olives, cucumbers</td>
-                <td>270</td>
-            </tr>
-        </table>
+      <h2>Salads</h2>
+      <table>
+        <tr>
+          <th>Item</th>
+          <th>Description</th>
+          <th>Calories</th>
+        </tr>
+        <tr>
+          <td>Tossed</td>
+          <td>Romaine, tomatoes, croutons</td>
+          <td>170</td>
+        </tr>
+        <tr>
+          <td>Chef</td>
+          <td>Turkey, ham, cheddar</td>
+          <td>370</td>
+        </tr>
+        <tr>
+          <td>Greek</td>
+          <td>Feta, olives, cucumbers</td>
+          <td>270</td>
+        </tr>
+      </table>
     </section>
 
     <section id="subs">
-        <h2>Subs</h2>
-        <table border="1" cellpadding="8">
-            <tr>
-                <th>Item</th>
-                <th>Description</th>
-                <th>Calories</th>
-            </tr>
-            <tr>
-                <td>Turkey & Swiss</td>
-                <td>Oven-roasted turkey and Swiss</td>
-                <td>430</td>
-            </tr>
-            <tr>
-                <td>Italian</td>
-                <td>Pepperoni, ham, Genoa salami, provolone</td>
-                <td>480</td>
-            </tr>
-            <tr>
-                <td>Veggie</td>
-                <td>Provolone, bell peppers, olives</td>
-                <td>380</td>
-            </tr>
-        </table>
+      <h2>Subs</h2>
+      <table>
+        <tr>
+          <th>Item</th>
+          <th>Description</th>
+          <th>Calories</th>
+        </tr>
+        <tr>
+          <td>Turkey & Swiss</td>
+          <td>Oven-roasted turkey with Swiss cheese</td>
+          <td>430</td>
+        </tr>
+        <tr>
+          <td>Italian</td>
+          <td>Ham, salami, provolone</td>
+          <td>480</td>
+        </tr>
+        <tr>
+          <td>Veggie</td>
+          <td>Provolone, bell peppers, olives</td>
+          <td>380</td>
+        </tr>
+      </table>
     </section>
 
     <section id="goodies">
-        <h2>Goodies</h2>
-        <table border="1" cellpadding="8">
-            <tr>
-                <th>Item</th>
-                <th>Description</th>
-                <th>Calories</th>
-            </tr>
-            <tr>
-                <td>Fruit Cup</td>
-                <td>Seasonal fruit</td>
-                <td>80</td>
-            </tr>
-            <tr>
-                <td>Chips</td>
-                <td>Assorted flavors</td>
-                <td>150</td>
-            </tr>
-            <tr>
-                <td>Cookies</td>
-                <td>Chocolate chip, oatmeal, etc.</td>
-                <td>220</td>
-            </tr>
-        </table>
+      <h2>Goodies</h2>
+      <table>
+        <tr>
+          <th>Item</th>
+          <th>Description</th>
+          <th>Calories</th>
+        </tr>
+        <tr>
+          <td>Fruit Cup</td>
+          <td>Fresh seasonal fruit</td>
+          <td>80</td>
+        </tr>
+        <tr>
+          <td>Chips</td>
+          <td>Assorted flavors</td>
+          <td>150</td>
+        </tr>
+        <tr>
+          <td>Cookies</td>
+          <td>Chocolate chip, oatmeal, more</td>
+          <td>220</td>
+        </tr>
+      </table>
     </section>
 
     <section id="drinks">
-        <h2>Drinks</h2>
-        <table border="1" cellpadding="8">
-            <tr>
-                <th>Item</th>
-                <th>Description</th>
-                <th>Calories</th>
-            </tr>
-            <tr>
-                <td>Soda</td>
-                <td>Coca-Cola products</td>
-                <td>150-200</td>
-            </tr>
-            <tr>
-                <td>Tea</td>
-                <td>Fresh brewed (unsweetened)</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td>Bottled Water</td>
-                <td>Plain bottled water</td>
-                <td>0</td>
-            </tr>
-        </table>
+      <h2>Drinks</h2>
+      <table>
+        <tr>
+          <th>Item</th>
+          <th>Description</th>
+          <th>Calories</th>
+        </tr>
+        <tr>
+          <td>Soda</td>
+          <td>Coca-Cola products</td>
+          <td>150-200</td>
+        </tr>
+        <tr>
+          <td>Tea</td>
+          <td>Fresh brewed, unsweetened</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>Water</td>
+          <td>Bottled water</td>
+          <td>0</td>
+        </tr>
+      </table>
     </section>
+  </main>
 
-    <hr>
-
-    <footer>
-        <p>&copy; 2025 University of Cincinnati, IT2040</p>
-        <p><a href="mailto:25daviol@students.lovelandschools.org">25daviol@students.lovelandschools.org</a></p>
-    </footer>
+  <footer>
+    <p>&copy; 2025 University of Cincinnati, IT2040</p>
+    <p><a href="mailto:25daviol@students.lovelandschools.org">25daviol@students.lovelandschools.org</a></p>
+  </footer>
 </body>
 </html>
